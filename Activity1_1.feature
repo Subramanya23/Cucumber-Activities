@@ -1,12 +1,14 @@
 @activity1_1
 Feature: Create a new user
 
-Scenario: Visit the site’s backend and create a new user
-    Given Open a browser
-    When Navigate to Alchemy Jobs and log in
-    Then Locate the left hand menu and click the menu item that has Users
-    And Locate the Add New button and click it
-    Then Fill in the necessary details
-    And Click the Add New User button
-    Then Verify that the user was created
-    And Close the browser
+Scenario: Visit the siteâ€™s backend and create a new user
+    Given User is on the page
+    When User clicks the Simple Alert button
+    When User clicks the Confirm Alert button
+    When User clicks the Prompt Alert button
+    Then Alert opens
+    And Read the text from it and print it
+    And Write a custom message in it
+    And Close the alert
+    And Close the alert with Cancel
+    And Closebrowser
